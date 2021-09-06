@@ -59915,7 +59915,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
                 _context.prev = 2;
                 _context.next = 5;
-                return axios.get('/kingdom_vision/user');
+                return axios.get('/kingdom_vision_pro_2/user');
 
               case 5:
                 user = _context.sent.data;
@@ -59929,7 +59929,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                 }
 
                 _context.next = 12;
-                return axios.get("/kingdom_vision/api/cart/".concat(user.id)).then(function (response) {
+                return axios.get("/kingdom_vision_pro_2/api/cart/".concat(user.id)).then(function (response) {
                   commit("setBasket", {
                     items: response.data
                   });

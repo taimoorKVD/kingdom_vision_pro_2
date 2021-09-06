@@ -47,12 +47,12 @@ export default {
         async loadUser({ commit, dispatch }) {
             if(isLoggedIn()) {
                 try {
-                    const user = (await axios.get('/kingdom_vision/user')).data;
+                    const user = (await axios.get('/kingdom_vision_pro_2/user')).data;
                     console.log(user.id);
                     commit("setUser", user);
                     commit("setLoggedIn", true);
                     if(user) {
-                        await axios.get(`/kingdom_vision/api/cart/${user.id}`)
+                        await axios.get(`/kingdom_vision_pro_2/api/cart/${user.id}`)
                             .then(
                                 response => {
                                     commit("setBasket", { items: response.data });
