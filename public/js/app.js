@@ -1992,11 +1992,11 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                 _this.errors = null;
                 _context.prev = 2;
                 _context.next = 5;
-                return axios.get('/kingdom_vision/sanctum/csrf-cookie');
+                return axios.get('/kingdom_vision_pro_2/sanctum/csrf-cookie');
 
               case 5:
                 _context.next = 7;
-                return axios.post("/kingdom_vision/admin/login", {
+                return axios.post("/kingdom_vision_pro_2/admin/login", {
                   email: _this.email,
                   password: _this.password
                 });
@@ -2133,7 +2133,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                 };
                 _context.prev = 3;
                 _context.next = 6;
-                return axios.post("/kingdom_vision/admin/register", userData);
+                return axios.post("/kingdom_vision_pro_2/admin/register", userData);
 
               case 6:
                 response = _context.sent;
@@ -2385,7 +2385,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
                 _this.errors = null;
                 _context.prev = 3;
                 _context.next = 6;
-                return axios.post('/kingdom_vision/api/checkout', {
+                return axios.post('/kingdom_vision_pro_2/api/checkout', {
                   customer: _this.customer,
                   products: _this.basket,
                   user: _this.$store.getters.loggedUser
@@ -2420,7 +2420,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       this.$store.dispatch('removeFromBasket', id);
 
       if (Object(_shared_utilities_auth__WEBPACK_IMPORTED_MODULE_3__["isLoggedIn"])()) {
-        axios.post('/kingdom_vision/api/cart/delete', {
+        axios.post('/kingdom_vision_pro_2/api/cart/delete', {
           product: id,
           user: this.$store.getters.loggedUser
         });
@@ -2649,7 +2649,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
               case 0:
                 _context.prev = 0;
                 _context.next = 3;
-                return axios.post("/kingdom_vision/admin/logout");
+                return axios.post("/kingdom_vision_pro_2/admin/logout");
 
               case 3:
                 _context.next = 5;
@@ -2870,7 +2870,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
     var _this = this;
 
     this.loading = true;
-    axios.get("/kingdom_vision/api/products/".concat(this.$route.params.id)).then(function (response) {
+    axios.get("/kingdom_vision_pro_2_pro_2/api/products/".concat(this.$route.params.id)).then(function (response) {
       _this.product = response.data;
       _this.loading = false;
     });
@@ -2903,7 +2903,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                 }
 
                 _context.next = 5;
-                return axios.post('/kingdom_vision/api/cart', {
+                return axios.post('/kingdom_vision_pro_2_pro_2/api/cart', {
                   product: _this2.product,
                   user: _this2.$store.getters.loggedUser
                 });
@@ -2920,7 +2920,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       this.$store.dispatch('removeFromBasket', this.product.id);
 
       if (Object(_shared_utilities_auth__WEBPACK_IMPORTED_MODULE_2__["isLoggedIn"])()) {
-        axios.post('/kingdom_vision/api/cart/delete', {
+        axios.post('/kingdom_vision_pro_2_pro_2/api/cart/delete', {
           product: this.product,
           user: this.$store.getters.loggedUser
         });
@@ -58729,27 +58729,27 @@ Vue.component("fatal-error", _shared_components_FatalError__WEBPACK_IMPORTED_MOD
 Vue.component("v-error", _shared_components_ValidationError__WEBPACK_IMPORTED_MODULE_12__["default"]);
 Vue.component("success", _shared_components_Success__WEBPACK_IMPORTED_MODULE_13__["default"]);
 var routes = [{
-  path: '/kingdom_vision/home',
+  path: '/kingdom_vision_pro_2/home',
   component: _components_Home_vue__WEBPACK_IMPORTED_MODULE_3__["default"],
   name: "Home"
 }, {
-  path: '/kingdom_vision/about',
+  path: '/kingdom_vision_pro_2/about',
   component: _components_About__WEBPACK_IMPORTED_MODULE_4__["default"],
   name: "About"
 }, {
-  path: "/kingdom_vision/product/:id",
+  path: "/kingdom_vision_pro_2/product/:id",
   component: _product_Show__WEBPACK_IMPORTED_MODULE_9__["default"],
   name: "ProductShow"
 }, {
-  path: "/kingdom_vision/basket",
+  path: "/kingdom_vision_pro_2/basket",
   component: _basket_Basket__WEBPACK_IMPORTED_MODULE_10__["default"],
   name: "Basket"
 }, {
-  path: "/kingdom_vision/auth/login",
+  path: "/kingdom_vision_pro_2/auth/login",
   component: _auth_Login__WEBPACK_IMPORTED_MODULE_14__["default"],
   name: "login"
 }, {
-  path: "/kingdom_vision/auth/register",
+  path: "/kingdom_vision_pro_2/auth/register",
   component: _auth_Register__WEBPACK_IMPORTED_MODULE_15__["default"],
   name: "register"
 }];
@@ -59996,8 +59996,8 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! D:\xampp\htdocs\kingdom_vision\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! D:\xampp\htdocs\kingdom_vision\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! D:\xampp\htdocs\kingdom_vision_pro_2\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! D:\xampp\htdocs\kingdom_vision_pro_2\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

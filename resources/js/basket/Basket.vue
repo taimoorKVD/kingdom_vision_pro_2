@@ -172,7 +172,7 @@
                 this.purchaseAttempted = false;
                 this.errors = null;
                 try {
-                    await axios.post('/kingdom_vision/api/checkout',{
+                    await axios.post('/kingdom_vision_pro_2/api/checkout',{
                         customer: this.customer,
                         products: this.basket,
                         user: this.$store.getters.loggedUser
@@ -187,7 +187,7 @@
             removeFromBasket(id) {
                 this.$store.dispatch('removeFromBasket', id);
                 if(isLoggedIn()) {
-                    axios.post('/kingdom_vision/api/cart/delete', {
+                    axios.post('/kingdom_vision_pro_2/api/cart/delete', {
                         product: id,
                         user: this.$store.getters.loggedUser
                     });

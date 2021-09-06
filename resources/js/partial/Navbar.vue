@@ -69,7 +69,7 @@
         methods: {
           async logout() {
               try {
-                  await axios.post("/kingdom_vision/admin/logout");
+                  await axios.post("/kingdom_vision_pro_2/admin/logout");
                   await this.$store.dispatch("logout");
               } catch(error) {
                   await this.$store.dispatch("logout");

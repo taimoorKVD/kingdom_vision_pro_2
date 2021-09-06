@@ -33,32 +33,32 @@ Vue.component("success", Success);
 
 let routes = [
     {
-        path: '/kingdom_vision/home',
+        path: '/kingdom_vision_pro_2/home',
         component: Home,
         name: "Home"
     },
     {
-        path: '/kingdom_vision/about',
+        path: '/kingdom_vision_pro_2/about',
         component: About,
         name: "About"
     },
     {
-        path: "/kingdom_vision/product/:id",
+        path: "/kingdom_vision_pro_2/product/:id",
         component: ProductShow,
         name: "ProductShow"
     },
     {
-        path: "/kingdom_vision/basket",
+        path: "/kingdom_vision_pro_2/basket",
         component: Basket,
         name: "Basket"
     },
     {
-        path: "/kingdom_vision/auth/login",
+        path: "/kingdom_vision_pro_2/auth/login",
         component: Login,
         name: "login"
     },
     {
-        path: "/kingdom_vision/auth/register",
+        path: "/kingdom_vision_pro_2/auth/register",
         component: Register,
         name: "register"
     },

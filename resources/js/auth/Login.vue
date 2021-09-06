@@ -54,8 +54,8 @@
                 this.loading = true;
                 this.errors = null;
                 try {
-                    await axios.get('/kingdom_vision/sanctum/csrf-cookie');
-                    await axios.post("/kingdom_vision/admin/login", {
+                    await axios.get('/kingdom_vision_pro_2/sanctum/csrf-cookie');
+                    await axios.post("/kingdom_vision_pro_2/admin/login", {
                         email: this.email,
                         password: this.password
                     });

@@ -68,7 +68,7 @@
                     password_confirmation: this.password_confirmation
                 };
                 try {
-                    const response = await axios.post("/kingdom_vision/admin/register", userData);
+                    const response = await axios.post("/kingdom_vision_pro_2/admin/register", userData);
                     if(201 === response.status) {
                         logIn();
                         await this.$store.dispatch("loadUser");
