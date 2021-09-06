@@ -2870,7 +2870,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
     var _this = this;
 
     this.loading = true;
-    axios.get("/kingdom_vision_pro_2_pro_2/api/products/".concat(this.$route.params.id)).then(function (response) {
+    axios.get("/kingdom_vision_pro_2/api/products/".concat(this.$route.params.id)).then(function (response) {
       _this.product = response.data;
       _this.loading = false;
     });
@@ -2903,7 +2903,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                 }
 
                 _context.next = 5;
-                return axios.post('/kingdom_vision_pro_2_pro_2/api/cart', {
+                return axios.post('/kingdom_vision_pro_2/api/cart', {
                   product: _this2.product,
                   user: _this2.$store.getters.loggedUser
                 });
@@ -2920,7 +2920,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       this.$store.dispatch('removeFromBasket', this.product.id);
 
       if (Object(_shared_utilities_auth__WEBPACK_IMPORTED_MODULE_2__["isLoggedIn"])()) {
-        axios.post('/kingdom_vision_pro_2_pro_2/api/cart/delete', {
+        axios.post('/kingdom_vision_pro_2/api/cart/delete', {
           product: this.product,
           user: this.$store.getters.loggedUser
         });

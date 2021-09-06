@@ -60,7 +60,7 @@
         },
         created() {
             this.loading = true;
-            axios.get(`/kingdom_vision_pro_2_pro_2/api/products/${this.$route.params.id}`)
+            axios.get(`/kingdom_vision_pro_2/api/products/${this.$route.params.id}`)
                 .then(
                     response => {
                         this.product = response.data;
@@ -81,7 +81,7 @@
                 await this.$store.dispatch('addToBasket', this.product);
 
                 if(isLoggedIn()) {
-                    await axios.post('/kingdom_vision_pro_2_pro_2/api/cart',{
+                    await axios.post('/kingdom_vision_pro_2/api/cart',{
                         product: this.product,
                         user: this.$store.getters.loggedUser
                     });
@@ -90,7 +90,7 @@
             removeFromBasket() {
               this.$store.dispatch('removeFromBasket', this.product.id);
                 if(isLoggedIn()) {
-                    axios.post('/kingdom_vision_pro_2_pro_2/api/cart/delete', {
+                    axios.post('/kingdom_vision_pro_2/api/cart/delete', {
                         product: this.product,
                         user: this.$store.getters.loggedUser
                     });
